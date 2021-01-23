@@ -1,0 +1,360 @@
+1. cmd -> memulai command prompt baru pada window yang sama
+    D:\>cmd
+    Microsoft Windows [Version 10.0.19042.746]
+    (c) 2020 Microsoft Corporation. All rights reserved.
+
+    D:\>
+
+2. cls -> membersihkan window command prompt
+    D:\>cls
+
+3. dir -> menampilkan isi folder
+    D:\>dir
+    Volume in drive D is Non-E
+    Volume Serial Number is 76B1-1749
+
+    Directory of D:\
+
+    18/10/2020  21:13    <DIR>          English
+    18/12/2020  15:07    <DIR>          Files
+    28/12/2020  14:00    <DIR>          Project
+    14/12/2020  07:52    <DIR>          Utils
+    31/12/2020  14:16    <DIR>          Video Lectures
+                0 File(s)              0 bytes
+                5 Dir(s)  66,337,828,864 bytes free
+
+4. mkdir -> berfungsi untuk membuat directory baru
+
+    D:\>mkdir folder-baru
+
+    D:\>dir
+    Volume in drive D is Non-E
+    Volume Serial Number is 76B1-1749
+
+    Directory of D:\
+
+    18/10/2020  21:13    <DIR>          English
+    18/12/2020  15:07    <DIR>          Files
+    22/01/2021  10:30    <DIR>          folder-baru
+    28/12/2020  14:00    <DIR>          Project
+    14/12/2020  07:52    <DIR>          Utils
+    31/12/2020  14:16    <DIR>          Video Lectures
+                0 File(s)              0 bytes
+                6 Dir(s)  66,337,828,864 bytes free
+
+5. rmdir -> menghapus folder
+    D:\>rmdir folder-baru
+
+    D:\>dir
+    Volume in drive D is Non-E
+    Volume Serial Number is 76B1-1749
+
+    Directory of D:\
+
+    18/10/2020  21:13    <DIR>          English
+    18/12/2020  15:07    <DIR>          Files
+    28/12/2020  14:00    <DIR>          Project
+    14/12/2020  07:52    <DIR>          Utils
+    31/12/2020  14:16    <DIR>          Video Lectures
+                0 File(s)              0 bytes
+                5 Dir(s)  66,337,824,768 bytes free
+
+6. chdir -> menampilkan path aktif pada window cmd
+    D:\>chdir
+    D:\
+
+7. cd -> masuk ke dalam folder yang dituju
+    D:\>cd Project
+
+    D:\Project>
+
+8. exit -> menutup window cmd
+    D:\>exit
+
+9. shutdown -> mematikan komputer
+    D:\>shutdown
+
+10. tzutil /g -> menampilkan timezone aktif pada operating system
+    D:\>tzutil /g
+    SE Asia Standard Time
+
+11. ping -> melakukan send request pada ip address yang dituju
+    D:\>ping google.com
+
+    Pinging google.com [172.217.194.138] with 32 bytes of data:
+    Reply from 172.217.194.138: bytes=32 time=21ms TTL=58
+    Reply from 172.217.194.138: bytes=32 time=18ms TTL=58
+    Reply from 172.217.194.138: bytes=32 time=19ms TTL=58
+    Reply from 172.217.194.138: bytes=32 time=18ms TTL=58
+
+    Ping statistics for 172.217.194.138:
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+    Approximate round trip times in milli-seconds:
+        Minimum = 18ms, Maximum = 21ms, Average = 19ms
+
+12. ipconfig -> menampilkan konfigurasi IP
+    D:\>ipconfig
+
+    Windows IP Configuration
+
+
+    Ethernet adapter Ethernet:
+
+    Media State . . . . . . . . . . . : Media disconnected
+    Connection-specific DNS Suffix  . :
+
+    Wireless LAN adapter Local Area Connection* 1:
+
+    Media State . . . . . . . . . . . : Media disconnected
+    Connection-specific DNS Suffix  . :
+
+    Wireless LAN adapter Local Area Connection* 2:
+
+    Media State . . . . . . . . . . . : Media disconnected
+    Connection-specific DNS Suffix  . :
+
+    Wireless LAN adapter WiFi:
+
+    Connection-specific DNS Suffix  . :
+    Link-local IPv6 Address . . . . . : fe80::e4ed:1fb0:e1f1:c1ea%11
+    IPv4 Address. . . . . . . . . . . : 10.1.78.220
+    Subnet Mask . . . . . . . . . . . : 255.255.255.0
+    Default Gateway . . . . . . . . . : 10.1.78.1
+
+    Ethernet adapter Bluetooth Network Connection:
+
+    Media State . . . . . . . . . . . : Media disconnected
+    Connection-specific DNS Suffix  . :
+
+    Ethernet adapter vEthernet (WSL):
+
+    Connection-specific DNS Suffix  . :
+    Link-local IPv6 Address . . . . . : fe80::5d25:4352:600f:a5d9%43
+    IPv4 Address. . . . . . . . . . . : 172.28.48.1
+    Subnet Mask . . . . . . . . . . . : 255.255.240.0
+    Default Gateway . . . . . . . . . :
+
+13. move -> memindahkan file/folder ke folder tujuan
+    D:\>dir
+    Volume in drive D is Non-E
+    Volume Serial Number is 76B1-1749
+
+    Directory of D:\
+
+    18/10/2020  21:13    <DIR>          English
+    18/12/2020  15:07    <DIR>          Files
+    22/01/2021  10:53    <DIR>          folder-baru
+    28/12/2020  14:00    <DIR>          Project
+    14/12/2020  07:52    <DIR>          Utils
+    31/12/2020  14:16    <DIR>          Video Lectures
+                0 File(s)              0 bytes
+                6 Dir(s)  66,337,828,864 bytes free
+
+    D:\>move folder-baru Project
+            1 dir(s) moved.
+
+    D:\>dir
+    Volume in drive D is Non-E
+    Volume Serial Number is 76B1-1749
+
+    Directory of D:\
+
+    18/10/2020  21:13    <DIR>          English
+    18/12/2020  15:07    <DIR>          Files
+    22/01/2021  10:53    <DIR>          Project
+    14/12/2020  07:52    <DIR>          Utils
+    31/12/2020  14:16    <DIR>          Video Lectures
+                0 File(s)              0 bytes
+                5 Dir(s)  66,337,828,864 bytes free
+
+14. copy -> duplikat file/folder ke folder tujuan
+    D:\>dir
+    Volume in drive D is Non-E
+    Volume Serial Number is 76B1-1749
+
+    Directory of D:\
+
+    22/01/2021  10:57                 0 document.txt
+    18/10/2020  21:13    <DIR>          English
+    18/12/2020  15:07    <DIR>          Files
+    22/01/2021  10:53    <DIR>          folder-baru
+    22/01/2021  10:57    <DIR>          Project
+    14/12/2020  07:52    <DIR>          Utils
+    31/12/2020  14:16    <DIR>          Video Lectures
+                1 File(s)              0 bytes
+                6 Dir(s)  66,337,828,864 bytes free
+
+    D:\>copy document.txt folder-baru
+            1 file(s) copied.
+
+    D:\>cd folder-baru
+
+    D:\folder-baru>dir
+    Volume in drive D is Non-E
+    Volume Serial Number is 76B1-1749
+
+    Directory of D:\folder-baru
+
+    22/01/2021  10:58    <DIR>          .
+    22/01/2021  10:58    <DIR>          ..
+    22/01/2021  10:57                 0 document.txt
+                1 File(s)              0 bytes
+                2 Dir(s)  66,337,828,864 bytes free
+
+15. rename -> mengganti nama file/folder
+    D:\folder-baru>rename document.txt document-baru.txt
+
+    D:\folder-baru>dir
+    Volume in drive D is Non-E
+    Volume Serial Number is 76B1-1749
+
+    Directory of D:\folder-baru
+
+    22/01/2021  11:00    <DIR>          .
+    22/01/2021  11:00    <DIR>          ..
+    22/01/2021  10:57                 0 document-baru.txt
+                1 File(s)              0 bytes
+                2 Dir(s)  66,337,824,768 bytes free
+
+16. del -> menghapus file/folder
+    D:\folder-baru>del document-baru.txt
+
+    D:\folder-baru>dir
+    Volume in drive D is Non-E
+    Volume Serial Number is 76B1-1749
+
+    Directory of D:\folder-baru
+
+    22/01/2021  11:00    <DIR>          .
+    22/01/2021  11:00    <DIR>          ..
+                0 File(s)              0 bytes
+                2 Dir(s)  66,337,824,768 bytes free
+
+17. erase -> menghapus file/folder secara permanen
+    D:\>erase document.txt
+
+    D:\>dir
+    Volume in drive D is Non-E
+    Volume Serial Number is 76B1-1749
+
+    Directory of D:\
+
+    18/10/2020  21:13    <DIR>          English
+    18/12/2020  15:07    <DIR>          Files
+    22/01/2021  11:00    <DIR>          folder-baru
+    22/01/2021  10:57    <DIR>          Project
+    14/12/2020  07:52    <DIR>          Utils
+    31/12/2020  14:16    <DIR>          Video Lectures
+                0 File(s)              0 bytes
+                6 Dir(s)  66,337,824,768 bytes free
+
+18. type -> mengeluarkan isi file
+    D:\>type document.txt
+    Hello world!
+
+19. find -> mencari kata/teks pada suatu file
+    D:\>find "hello" document.txt
+
+    ---------- DOCUMENT.TXT
+    hello world!
+
+20. help -> menampilkan command-command pada command prompt
+    D:\>help
+    For more information on a specific command, type HELP command-name
+    ASSOC          Displays or modifies file extension associations.
+    ATTRIB         Displays or changes file attributes.
+    BREAK          Sets or clears extended CTRL+C checking.
+    BCDEDIT        Sets properties in boot database to control boot loading.
+    CACLS          Displays or modifies access control lists (ACLs) of files.
+    CALL           Calls one batch program from another.
+    CD             Displays the name of or changes the current directory.
+    CHCP           Displays or sets the active code page number.
+    CHDIR          Displays the name of or changes the current directory.
+    CHKDSK         Checks a disk and displays a status report.
+    CHKNTFS        Displays or modifies the checking of disk at boot time.
+    CLS            Clears the screen.
+    CMD            Starts a new instance of the Windows command interpreter.
+    COLOR          Sets the default console foreground and background colors.
+    COMP           Compares the contents of two files or sets of files.
+    COMPACT        Displays or alters the compression of files on NTFS partitions.
+    CONVERT        Converts FAT volumes to NTFS.  You cannot convert the
+                current drive.
+    COPY           Copies one or more files to another location.
+    DATE           Displays or sets the date.
+    DEL            Deletes one or more files.
+    DIR            Displays a list of files and subdirectories in a directory.
+    DISKPART       Displays or configures Disk Partition properties.
+    DOSKEY         Edits command lines, recalls Windows commands, and
+                creates macros.
+    DRIVERQUERY    Displays current device driver status and properties.
+    ECHO           Displays messages, or turns command echoing on or off.
+    ENDLOCAL       Ends localization of environment changes in a batch file.
+    ERASE          Deletes one or more files.
+    EXIT           Quits the CMD.EXE program (command interpreter).
+    FC             Compares two files or sets of files, and displays the
+                differences between them.
+    FIND           Searches for a text string in a file or files.
+    FINDSTR        Searches for strings in files.
+    FOR            Runs a specified command for each file in a set of files.
+    FORMAT         Formats a disk for use with Windows.
+    FSUTIL         Displays or configures the file system properties.
+    FTYPE          Displays or modifies file types used in file extension
+                associations.
+    GOTO           Directs the Windows command interpreter to a labeled line in
+                a batch program.
+    GPRESULT       Displays Group Policy information for machine or user.
+    GRAFTABL       Enables Windows to display an extended character set in
+                graphics mode.
+    HELP           Provides Help information for Windows commands.
+    ICACLS         Display, modify, backup, or restore ACLs for files and
+                directories.
+    IF             Performs conditional processing in batch programs.
+    LABEL          Creates, changes, or deletes the volume label of a disk.
+    MD             Creates a directory.
+    MKDIR          Creates a directory.
+    MKLINK         Creates Symbolic Links and Hard Links
+    MODE           Configures a system device.
+    MORE           Displays output one screen at a time.
+    MOVE           Moves one or more files from one directory to another
+                directory.
+    OPENFILES      Displays files opened by remote users for a file share.
+    PATH           Displays or sets a search path for executable files.
+    PAUSE          Suspends processing of a batch file and displays a message.
+    POPD           Restores the previous value of the current directory saved by
+                PUSHD.
+    PRINT          Prints a text file.
+    PROMPT         Changes the Windows command prompt.
+    PUSHD          Saves the current directory then changes it.
+    RD             Removes a directory.
+    RECOVER        Recovers readable information from a bad or defective disk.
+    REM            Records comments (remarks) in batch files or CONFIG.SYS.
+    REN            Renames a file or files.
+    RENAME         Renames a file or files.
+    REPLACE        Replaces files.
+    RMDIR          Removes a directory.
+    ROBOCOPY       Advanced utility to copy files and directory trees
+    SET            Displays, sets, or removes Windows environment variables.
+    SETLOCAL       Begins localization of environment changes in a batch file.
+    SC             Displays or configures services (background processes).
+    SCHTASKS       Schedules commands and programs to run on a computer.
+    SHIFT          Shifts the position of replaceable parameters in batch files.
+    SHUTDOWN       Allows proper local or remote shutdown of machine.
+    SORT           Sorts input.
+    START          Starts a separate window to run a specified program or command.
+    SUBST          Associates a path with a drive letter.
+    SYSTEMINFO     Displays machine specific properties and configuration.
+    TASKLIST       Displays all currently running tasks including services.
+    TASKKILL       Kill or stop a running process or application.
+    TIME           Displays or sets the system time.
+    TITLE          Sets the window title for a CMD.EXE session.
+    TREE           Graphically displays the directory structure of a drive or
+                path.
+    TYPE           Displays the contents of a text file.
+    VER            Displays the Windows version.
+    VERIFY         Tells Windows whether to verify that your files are written
+                correctly to a disk.
+    VOL            Displays a disk volume label and serial number.
+    XCOPY          Copies files and directory trees.
+    WMIC           Displays WMI information inside interactive command shell.
+
+    For more information on tools see the command-line reference in the online help.
