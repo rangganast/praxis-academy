@@ -1,0 +1,14 @@
+Struktur Data
+    - Array: 
+        - kumpulan beberapa data dalam satu variable
+        - disatukan dalam kurung siku, dipisah dengan koma
+        - urutan tidak penting
+        - bisa dimasukkan berbagai tipe data
+        - contoh: let scores = [70, 80, 60]
+    - Object:
+        - kumpulan beberapa data dalam satu variable
+        - disatukan dalam kurung kurawal
+        - terdiri dari key-value
+        - key bisa dikustom (bisa dinamai selain angka index)
+        - data bisa diakses seperti array, bedanya kurung siku diisi dengan key dari data, contoh: pegawai['nama']
+        - data bisa diakses dengan menggunakan titik, contoh: pegawai.nama

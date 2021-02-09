@@ -1,0 +1,17 @@
+Deklarasi variabel:
+ - let -> nilai bisa diubah
+ - var -> nilai bisa diubah
+ - const -> nilai tidak bisa diubah
+ - variabel bisa dideklarasi tanpa nilai
+   contoh: let x; const y;
+
+Tipe data:
+ - Numerik
+    - integer -> angka bulat (positif dan negatif)
+    - float -> angka pecahan (menggunakan titik sebagai pemisah)
+ - String
+    - karakter huruf dan angka
+    - berbentuk teks bebas
+ - Boolean
+    - hanya satu isinya
+    - true atau false
