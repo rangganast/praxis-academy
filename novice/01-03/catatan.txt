@@ -1,0 +1,10 @@
+Function
+    - function merupakan metode yang bisa menerima inputan dan mengolah inputan tersebut sesuai perintah, lalu menghasilkan outpu
+    - function bisa dimasukkan ke dalam variable
+    - terdapat dua cara membuat function:
+        - "function" keyword
+            - bersifat hoisting (bisa dipanggil jika tidak dibuat terlebih dahulu)
+        - arrow function
+            - disarankan menggunakan const
+            - menggunakan tanda =>
+            - bersifat tidak hoisting
