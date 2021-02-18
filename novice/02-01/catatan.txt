@@ -1,0 +1,5 @@
+Callback
+    - JavaScript merupakan bahasa pemrograman event-loop, artinya kodingan diproses berdasarkan waktu, bukan berdasarkan urutan kode
+    - callback berguna agar kode dibuat secara berurutan
+    - callback memungkinkan suatu fungsi menerima parameter berupa fungsi lagi
+    - fungsi callback akan dipanggil jika fungsi utama telah selesai dieksekusi

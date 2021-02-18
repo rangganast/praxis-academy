@@ -28,5 +28,7 @@ class Cube extends Rectangle {
 // const kotak1 = new Rectangle(10, 8);
 // console.log(kotak1.luas);
 
-const cube1 = new Cube(10, 10, 10);
-console.log(cube1.volume());
+// const cube1 = new Cube(10, 10, 10);
+// console.log(cube1.volume());
+
+module.exports = { Rectangle, Cube };
